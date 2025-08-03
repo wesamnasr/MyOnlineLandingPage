@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const langSwitcher = document.getElementById("languageSwitcher");
   const siteTitle = document.getElementById("siteTitle");
   const bookNowBtn = document.getElementById("bookNowBtn");
@@ -27,6 +28,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const contactTitle = document.getElementById("contactTitle");
+   const mainFilterButtons = document.querySelectorAll(".filter-item");
+  const subFilterGroups = document.querySelectorAll(".sub-filter-group");
+
+
+   mainFilterButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+    
+       document.getElementById('subFilters').classList.remove('d-none');
+      // إزالة تفعيل كل الأزرار
+      mainFilterButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const selectedCategory = btn.getAttribute("data-category");
+
+      // إخفاء كل الشرائط الفرعية
+      subFilterGroups.forEach(group => {
+        if (group.getAttribute("data-category") === selectedCategory) {
+          group.classList.remove("d-none");
+        } else {
+          group.classList.add("d-none");
+        }
+      });
+    });
+  });
+  // لتفعيل زر معين داخل الشريط الفرعي
+   document.querySelectorAll(".sub-btn").forEach(btn => {
+    btn.addEventListener("click", function () {
+      const siblings = this.parentElement.querySelectorAll(".sub-btn");
+      siblings.forEach(b => b.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
 
   const translations = {
     en: {
@@ -167,6 +200,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     viewAll: "عرض جميع الصور",
   };
+
+
 
   const heroSection = document.getElementById("heroSection");
   if (heroSection) {

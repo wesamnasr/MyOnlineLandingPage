@@ -94,7 +94,7 @@
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="w-100 py-5 px-2">
+  <section id="services" class="w-100 py-5 px-4 bg-light">
     <div class="container">
       <!-- العنوان -->
       <h2 id="servicesTitle" class="fw-bold text-center display-6 mb-4">Our Services</h2>
@@ -107,32 +107,72 @@
       </div>
 
       <!-- الفلاتر -->
-      <div class="filters d-flex justify-content-center gap-3 flex-wrap mb-4 text-muted small">
+      <div class="filters d-flex justify-content-center gap-3 flex-wrap text-muted small "data-tab="services">
         <div class="filters d-flex justify-content-center gap-3 flex-wrap mb-4 text-muted small">
-          <button class="filter-item cursor-pointer"><i class="fa-solid fa-scissors me-2"></i>Hair</button>
-          <button class="filter-item cursor-pointer"><i class="fa-solid fa-face-smile me-2"></i>Face</button>
-          <button class="filter-item cursor-pointer"><i class="fa-solid fa-hand-sparkles me-2"></i>Nails</button>
-          <button class="filter-item cursor-pointer"><i class="fa-solid fa-eye me-2"></i>Lashes & Brows</button>
-          <button class="filter-item cursor-pointer"><i class="fa-solid fa-spa me-2"></i>Skincare</button>
-          <button class="filter-item cursor-pointer"><i class="fa-solid fa-leaf me-2"></i>Massage</button>
-          <button class="filter-item cursor-pointer"><i class="fa-solid fa-bath me-2"></i>Moroccan Bath</button>
-          <button class="filter-item cursor-pointer"><i class="fa-solid fa-fire me-2"></i>Waxing</button>
-          <button class="filter-item cursor-pointer"><i class="fa-solid fa-heart me-2"></i>Body</button>
+          <button class="filter-item cursor-pointer" data-category="hair"><i
+              class="fa-solid fa-scissors me-2"></i>Hair</button>
+          <button class="filter-item cursor-pointer" data-category="face"><i
+              class="fa-solid fa-face-smile me-2"></i>Face</button>
+          <button class="filter-item cursor-pointer" data-category="nails"><i
+              class="fa-solid fa-hand-sparkles me-2"></i>Nails</button>
+          <button class="filter-item cursor-pointer" data-category="lashes"><i class="fa-solid fa-eye me-2"></i>Lashes &
+            Brows</button>
+          <button class="filter-item cursor-pointer" data-category="skincare"><i
+              class="fa-solid fa-spa me-2"></i>Skincare</button>
+          <button class="filter-item cursor-pointer" data-category="massage"><i
+              class="fa-solid fa-leaf me-2"></i>Massage</button>
+          <button class="filter-item cursor-pointer" data-category="bath"><i class="fa-solid fa-bath me-2"></i>Moroccan
+            Bath</button>
+          <button class="filter-item cursor-pointer" data-category="waxing"><i
+              class="fa-solid fa-fire me-2"></i>Waxing</button>
+          <button class="filter-item cursor-pointer" data-category="body"><i
+              class="fa-solid fa-heart me-2"></i>Body</button>
+        </div>
+      </div>
+
+      <!-- الشرائط الفرعية -->
+      <div class="sub-filters text-center mb-4 d-none" id="subFilters">
+
+        <div class="sub-filter-group" data-category="hair">
+          <div class="d-flex align-items-start justify-content-start mb-2 gap-2">
+            <i class="fa-solid fa-scissors"></i>
+            <h5 class="sub-filter-title m-0">Hair</h5>
+          </div>
+          <button class="sub-btn">Cut</button>
+          <button class="sub-btn">Color</button>
+          <button class="sub-btn">Styling</button>
+          <button class="sub-btn">Treatment</button>
         </div>
 
+        <div class="sub-filter-group d-none" data-category="face">
+          <div class="d-flex align-items-start justify-content-start mb-2 gap-2">
+            <i class="fa-solid fa-face-smile"></i>
+            <h5 class="sub-filter-title mb-2">Face</h5>
+          </div>
+          <button class="sub-btn">Facial</button>
+          <button class="sub-btn">Cleansing</button>
+          <button class="sub-btn">Mask</button>
+        </div>
+
+        <div class="sub-filter-group d-none" data-category="nails">
+          <h5 class="sub-filter-title mb-2">Nails</h5>
+          <button class="sub-btn">Manicure</button>
+          <button class="sub-btn">Pedicure</button>
+          <button class="sub-btn">Polish</button>
+        </div>
 
       </div>
 
 
 
 
-      <div class="tab-content">
+      <div class="tab-content px-4">
         <!-- Our services cards-->
         <div id="services" class="tab-pane fade show active" data-tab="services">
           <div class="row row-cols-1 row-cols-md-3 g-4">
 
             <div class="col">
-              <div class="card h-100 shadow-sm ">
+              <div class="card custom-card h-100 shadow-sm ">
                 <img src="../Imgs/photo-1604654894610-df63bc536371.jpg" class="card-img-top" alt="Manicure" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -155,7 +195,7 @@
             </div>
 
             <div class="col">
-              <div class="card h-100 shadow-sm">
+              <div class="card custom-card h-100 shadow-sm">
                 <img src="../Imgs/photo-1562322140-8baeececf3df.jpg" class="card-img-top" alt="Manicure" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -177,7 +217,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 shadow-sm">
+              <div class="card custom-card h-100 shadow-sm">
                 <img src="../Imgs/photo-1610992015732-2449b76344bc.jpg" class="card-img-top" alt="Manicure" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -200,7 +240,7 @@
             </div>
 
             <div class="col">
-              <div class="card h-100 shadow-sm">
+              <div class="card custom-card h-100 shadow-sm">
                 <img src="../Imgs/photo-1610992015732-2449b76344bc.jpg" class="card-img-top" alt="Manicure" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -223,7 +263,7 @@
             </div>
 
             <div class="col">
-              <div class="card h-100 shadow-sm">
+              <div class="card custom-card h-100 shadow-sm">
                 <img src="../Imgs/photo-1570172619644-dfd03ed5d881.jpg" class="card-img-top" alt="Manicure" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -246,7 +286,7 @@
             </div>
 
             <div class="col">
-              <div class="card h-100 shadow-sm">
+              <div class="card custom-card h-100 shadow-sm">
                 <img src="../Imgs/photo-1616394584738-fc6e612e71b9.jpg" class="card-img-top" alt="Manicure" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -276,7 +316,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
 
             <div class="col">
-              <div class="card h-100 shadow-sm">
+              <div class="card custom-card h-100 shadow-sm">
                 <img src="../Imgs/photo-1570172619644-dfd03ed5d881.jpg" class="card-img-top" alt="Package" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -297,9 +337,10 @@
                 </div>
               </div>
             </div>
+            
 
             <div class="col">
-              <div class="card h-100 shadow-sm">
+              <div class="card custom-card h-100 shadow-sm">
                 <img src="../Imgs/photo-1570172619644-dfd03ed5d881.jpg" class="card-img-top" alt="Package" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -310,7 +351,7 @@
                   <p class="card-text text-muted">Includes massage, facial, and manicure</p>
                   <div class="d-flex justify-content-between align-items-center mt-3">
                     <div class="text-warning">
-                      <i class="bi bi-star  fill"></i> 4.9
+                      <i class="bi bi-star-fill"></i> 4.9
                     </div>
                     <strong class="text-pink">250 SAR</strong>
                   </div>
@@ -327,7 +368,7 @@
         <div id="Offers" class="tab-pane fade" data-tab="Offers">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-              <div class="card h-100 shadow-sm">
+              <div class="card custom-card h-100 shadow-sm">
                 <img src="../Imgs/photo-1616394584738-fc6e612e71b9.jpg" class="card-img-top" alt="Offer" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -349,7 +390,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 shadow-sm">
+              <div class="card custom-card h-100 shadow-sm">
                 <img src="../Imgs/photo-1616394584738-fc6e612e71b9.jpg" class="card-img-top" alt="Offer" />
                 <div class="card-body">
                   <div class="d-flex justify-content-between small text-muted mb-1">
@@ -549,91 +590,91 @@
 
 
 
-<section id="about" class="py-5 bg-light border-top">
-  <!-- Opening & Contact Info Section -->
-  <section id="openingInfo" class="py-5 px-5 bg-white border-t border-gray-200 ">
-    <div class="container">
-      <div class="row justify-content-between">
+  <section id="about" class="bg-light border-top">
+    <!-- Opening & Contact Info Section -->
+    <section id="openingInfo" class="py-5 px-5 bg-white border-t border-gray-200 ">
+      <div class="container">
+        <div class="row justify-content-between">
 
-        <!-- Opening Times -->
-        <div class="col-md-6 mb-5">
-          <h2 id="openingTitle" class="fw-bold text-2xl mb-4 text-dark">🕒 Opening Times</h2>
+          <!-- Opening Times -->
+          <div class="col-md-6 mb-5">
+            <h2 id="openingTitle" class="fw-bold text-2xl mb-4 text-dark">🕒 Opening Times</h2>
 
-          <ul class="list-unstyled">
-            <li class="d-flex justify-content-between border-bottom py-2 px-5">
-              <span><span class="text-success">● </span> <span class="day-name">Monday</span></span>
+            <ul class="list-unstyled ">
+              <li class="d-flex justify-content-between border-bottom pb-3">
+                <span><span class="text-success">● </span> <span class="day-name">Monday</span></span>
 
-              <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
-            </li>
-            <li class="d-flex justify-content-between border-bottom py-2 px-5">
-              <span><span class="text-success">●</span><span class="day-name"> Tuesday</span></span>
-              <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
-            </li>
-            <li class="d-flex justify-content-between border-bottom py-2 px-5">
-              <span><span class="text-success">●</span><span class="day-name"> Wednesday</span></span>
-              <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
-            </li>
-            <li class="d-flex justify-content-between border-bottom py-2 px-5">
-              <span><span class="text-success">●</span><span class="day-name"> Thursday</span></span>
-              <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
-            </li>
-            <li class="d-flex justify-content-between border-bottom py-2 px-5">
-              <span><span class="text-success">●</span><span class="day-name"> Friday</span></span>
-              <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
-            </li>
-            <li class="d-flex justify-content-between border-bottom py-2 px-5">
-              <span><span class="text-success ">●</span><span class="day-name"> Saturday</span></span>
-              <span class="day-time text-muted   ">2:00 PM - 10:00 PM</span>
-            </li>
-            <li class="d-flex justify-content-between py-2 px-5">
-              <span><span class="text-success">●</span><span class="day-name"> Sunday</span></span>
-              <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
-            </li>
-          </ul>
+                <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between border-bottom pb-3">
+                <span><span class="text-success">●</span><span class="day-name"> Tuesday</span></span>
+                <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between border-bottom pb-3">
+                <span><span class="text-success">●</span><span class="day-name"> Wednesday</span></span>
+                <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between border-bottom pb-3">
+                <span><span class="text-success">●</span><span class="day-name"> Thursday</span></span>
+                <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between border-bottom pb-3">
+                <span><span class="text-success">●</span><span class="day-name"> Friday</span></span>
+                <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between border-bottom pb-3">
+                <span><span class="text-success ">●</span><span class="day-name"> Saturday</span></span>
+                <span class="day-time text-muted   ">2:00 PM - 10:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between pb-0">
+                <span><span class="text-success">●</span><span class="day-name"> Sunday</span></span>
+                <span class="day-time text-muted">2:00 PM - 10:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div id="contactInfo" class="col-md-5 mb-5">
+            <h4 id="contactTitle" class="fw-bold text-2xl mb-10 text-dark">📞 Contact Us</h4>
+            <ul class="list-unstyled mt-5">
+              <li class="mb-3">
+                <i class="text-success fas fa-check-circle me-2"></i>
+                <span id="instantConfirm">Instant Confirmation</span>
+              </li>
+
+              <li class="mb-3">
+                <i class="fas fa-credit-card me-2 text-primary"></i>
+                <span id="payByApp">Pay by App</span>
+              </li>
+
+              <li class="mb-3">
+                <i class="fas fa-phone-alt me-2 text-danger"></i>
+                <a href="tel:582792728" class="text-decoration-none text-dark" id="phoneNumber">582792728</a>
+              </li>
+
+              <li class="mb-3">
+                <i class="fas fa-envelope me-2 text-warning"></i>
+                <a href="mailto:info.naibeautyboutique@gmail.com" class="text-decoration-none text-dark"
+                  id="emailAddress">info.naibeautyboutique@gmail.com</a>
+              </li>
+
+            </ul>
+          </div>
+
         </div>
-
-        <!-- Contact Info -->
-        <div id="contactInfo" class="col-md-5 mb-5">
-          <h4 id="contactTitle" class="fw-bold text-2xl mb-10 text-dark">📞 Contact Us</h4>
-          <ul class="list-unstyled mt-5 px-5">
-            <li class="mb-3">
-              <i class="text-success fas fa-check-circle me-2"></i>
-              <span id="instantConfirm">Instant Confirmation</span>
-            </li>
-
-            <li class="mb-3">
-              <i class="fas fa-credit-card me-2 text-primary"></i>
-              <span id="payByApp">Pay by App</span>
-            </li>
-
-            <li class="mb-3">
-              <i class="fas fa-phone-alt me-2 text-danger"></i>
-              <a href="tel:582792728" class="text-decoration-none text-dark" id="phoneNumber">582792728</a>
-            </li>
-
-            <li class="mb-3">
-              <i class="fas fa-envelope me-2 text-warning"></i>
-              <a href="mailto:info.naibeautyboutique@gmail.com" class="text-decoration-none text-dark"
-                id="emailAddress">info.naibeautyboutique@gmail.com</a>
-            </li>
-
-          </ul>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-</section>
+  </section>
 
 
   <!-- Google Map Section -->
-  <section id="mapSection" class="py-5 bg-light border-top">
+  <section id="mapSection" class="pt-3 bg-light border-top">
     <div class="container">
       <h2 class="find-us-title fw-bold text-center mb-4">📍 Find Us</h2>
 
       <!-- Responsive Map -->
-      <div class="rounded overflow-hidden shadow" style="height: 400px;">
+      <div class="rounded overflow-hidden shadow" style="height: 450px;">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7241.0186155908805!2d46.661946!3d24.846449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efa7954a57be3%3A0x2badc682b93533cc!2sKing%20Salman%20Bin%20Abdulaziz%20Rd%20Saudi%20Arabia!5e0!3m2!1sen!2us!4v1752933552873!5m2!1sen!2us"
           width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
